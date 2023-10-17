@@ -1,0 +1,23 @@
+import pandas as pd
+n=3
+m=5
+k=7
+p=9
+q=4
+r=8
+d={'a':[n+m+q],'b':[k+p+r]}
+df=pd.DataFrame(data=d)
+df.head()
+print(df)
+sumc=df.sum(axis=0)
+print("Sum of each column is as follows:")
+print("*********************************")
+print(sumc)
+a1=d['a']
+b1=d['b']
+print(a1)
+print(b1)
+if a1>b1:
+    print(a1,"is the greatest")
+else:
+    print(b1,"is the greatest")
